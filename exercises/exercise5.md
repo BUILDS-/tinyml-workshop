@@ -1,5 +1,19 @@
 # Exercise 5: Gather the Training Data
 
+### MacOS Only
+
+If you are on Mac you have have trouble copying the data from the serial output. There is a very short video [here](https://www.youtube.com/watch?v=RWgyCcnUxPY) that shows how you can do it! 
+
+Alternatively, you can use the terminal and `pbcopy` the ouput. ***ENSURE SERIAL MONITOR IS CLOSED BEFORE DOING THIS***.
+
+```bash
+pbcopy /dev/cu.usbmodem214101 
+```
+
+This will save the output to your clipboard, and you can paste it into your desired file from there!
+
+Otherwise, you can follow along with the instructions as normal:
+
 1. Press the reset button on the board
 1. Open the Serial Monitor: `Tools -> Serial Monitor`
 1. Make a punch gesture with the board in your hand - you should see the sensor data log in the Serial Monitor
@@ -13,18 +27,6 @@
 1. Copy and paste the serial output to new text file named `flex.csv`
 
 ![screenshot of serial monitor with IMU data](images/serial-monitor-imu.png)
-
-### MacOS Only
-
-If you are on Mac you have have trouble copying the data from the serial output. There is a very short video [here](https://www.youtube.com/watch?v=RWgyCcnUxPY) that shows how you can do it! 
-
-Alternatively, you can use the terminal and `pbcopy` the ouput. ***ENSURE SERIAL MONITOR IS CLOSED BEFORE DOING THIS***.
-
-```bash
-pbcopy /dev/cu.usbmodem214101 
-```
-
-This will save the output to your clipboard, and you can paste it into your desired file from there!
 
 ## Creating CSV Files
 
