@@ -14,6 +14,18 @@
 
 ![screenshot of serial monitor with IMU data](images/serial-monitor-imu.png)
 
+### MacOS Only
+
+If you are on Mac you have have trouble copying the data from the serial output. There is a very short video [here](https://www.youtube.com/watch?v=RWgyCcnUxPY) that shows how you can do it! 
+
+Alternatively, you can use the terminal and `pbcopy` the ouput. ***ENSURE SERIAL MONITOR IS CLOSED BEFORE DOING THIS***.
+
+```bash
+pbcopy /dev/cu.usbmodem214101 
+```
+
+This will save the output to your clipboard, and you can paste it into your desired file from there!
+
 ## Creating CSV Files
 
 Visual Studio Code, Sublime Text, or Atom will all work great for creating CSV files. If you don't have one of these editors installed, try Notepad.exe on Windows or TextEdit on MacOS. Note that TextEdit wants to save data in rich text format default. Be sure to choose _Format -> Make Plain Text_ before choosing _File -> Save_.
