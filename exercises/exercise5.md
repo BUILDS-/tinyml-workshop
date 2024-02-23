@@ -1,8 +1,6 @@
 # Exercise 5: Gather the Training Data
 
-**MacOS Only**
-
-If you are on Mac you and have trouble copying the data from the serial output. There is a very short video [here](https://www.youtube.com/watch?v=RWgyCcnUxPY) that shows how you can do it!
+If you are on Mac or Windows you and have trouble copying the data from the serial output. There is a very short video [here](https://www.youtube.com/watch?v=RWgyCcnUxPY) that shows how you can do it!
 
 Alternatively, you can use the terminal and `pbcopy` the ouput. ***ENSURE SERIAL MONITOR IS CLOSED BEFORE DOING THIS***. The actual port name will likely be different on your computer. If necessary, get the name of the port from the Arduino IDE. We're using `/dev/cu.usbmodem214101` as an example.
 
