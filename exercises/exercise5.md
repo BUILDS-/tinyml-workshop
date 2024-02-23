@@ -10,7 +10,13 @@ Alternatively, you can use the terminal and `pbcopy` the ouput. ***ENSURE SERIAL
 pbcopy /dev/cu.usbmodem214101 
 ```
 
-This will save the output to your clipboard, and you can paste it into your desired file from there!
+This will save the output to your clipboard, and you can paste it into your desired file from there! Unfortunately, you won't see the output from the serial monitor using this method.
+
+Alternatively, you can use `cat` to view the output and copy + paste it as you please:
+
+```bash
+cat /dev/cu.usbmodem214101 
+```
 
 Otherwise, you can follow along with the instructions as normal:
 
